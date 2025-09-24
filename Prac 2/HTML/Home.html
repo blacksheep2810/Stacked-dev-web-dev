@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Jeff.css">
@@ -7,12 +8,12 @@
 </head>
 
 <body>
-<div id = NavBarBlock>
-<header>
-    <b>Visit Jeffrey's bay, <i>where love and peace meets the sun and sea</i></b>
-</header>
-
-<nav id="NavBar">
+<!-- Navigation -->
+<div id="NavBarBlock">
+  <header>
+    <b>Visit Jeffrey's Bay, <i>where love and peace meets the sun and sea</i></b>
+  </header>
+  <nav id="NavBar">
     <a href="Home.html">Home</a>
     <a href="Culture.html">Culture</a>
     <a href="History.html">History</a>
@@ -20,52 +21,74 @@
     <a href="Suggestions.html">Share your experience</a>
     <a href="About us.html">About us</a>
     <a href="SignIn.html">Sign In</a>
-</nav>
-</div>
-<div class=Container>
-<div>
-<h1>The Scenery</h1>
-<!-- <p>Jeffrey's Bay is renowned for its stunning landscapes, pristine beaches, and laid back atmosphere. Whether you're a nature enthusiast or simply looking to relax by the sea, Jeffrey's Bay has something for everyone.</p> -->
-<h2>Experience Our Ocean</h2>
-<video id="waveVideo" width="640" height="360" autoplay muted loop>
-    <source src="../videos/ocean_home_page.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-<p>Watch the beautiful waves of Jeffrey's Bay</p>
-
-<div class=Panel>
-	<h2>Places to see</h2>
-	<p> Locations goes here</p>
-	<img id="busImage" src = "../images/beachbus.jpg" alt="beachbus.jpg" width="600" height="800" image>
-	
-
+  </nav>
 </div>
 
-<div class=Panel>
-	<h2>Hear our stories</h2>
-	<p> Testimonials go here </p>
+<!-- Main content -->
+<div class="Container">
+
+  <!-- Hero section (text left, video right) -->
+  <section class="split-section">
+    <div class="split-text">
+      <h1>Explore the Scenery</h1>
+      <p>
+        Jeffrey's Bay is renowned for its stunning landscapes, pristine beaches, 
+        and laid-back atmosphere. Whether you're a nature enthusiast or simply 
+        looking to relax by the sea, Jeffrey's Bay has something for everyone.
+      </p>
+    </div>
+    <div class="split-media">
+      <video id="waveVideo" autoplay muted loop>
+        <source src="../videos/ocean_home_page.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- Panel 1 -->
+  <section class="split-section">
+    <div class="split-text">
+      <h2>Places to See</h2>
+      <p>Discover iconic spots around Jeffrey’s Bay that showcase our unique beauty.</p>
+    </div>
+    <div class="split-media">
+      <img id="busImage" src="../images/beachbus.jpg" alt="Beach Bus">
+    </div>
+  </section>
+
+  <!-- Panel 2 -->
+  <section class="split-section">
+    <div class="split-text">
+      <h2>Hear Our Stories</h2>
+      <p>From surfers to shell collectors, hear the tales of those who call J-Bay home.</p>
+    </div>
+    <div class="split-media">
+      <!-- You could add another image or a placeholder here -->
+      <img src="../images/story.jpg" alt="Local stories">
+    </div>
+  </section>
 
 </div>
 
-
-</div>
+<!-- Footer -->
 <div class="FootBarSpace"></div>
-<div id=FootBar>
-<footer id="footer">
-	<div class="social-icons">
-	<a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fjeffreysbayonline%2F" target="_blank" class="social-link">
-            <img src="../svg/facebook.svg" alt="Facebook" class="social-icon">
-        </a>
-        <a href="https://www.instagram.com/jeffreysbaytourism/?hl=en" target="_blank" class="social-link">
-            <img src="../svg/insta.svg" alt="Instagram" class="social-icon">
-        </a>
-        <a href="https://www.airbnb.com/jeffreys-bay-south-africa/stays" target="_blank" class="social-link">
-            <img src="../svg/airbnb.svg" alt="Airbnb" class="social-icon">
-        </a>
-	<a href="https://www.kouga.gov.za/"target="_blank">Municipality</a> 
+<div id="FootBar">
+  <footer id="footer">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/groups/jeffreysbayonline/" target="_blank" class="social-link">
+        <img src="../svg/facebook.svg" alt="Facebook" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/jeffreysbaytourism/?hl=en" target="_blank" class="social-link">
+        <img src="../svg/insta.svg" alt="Instagram" class="social-icon">
+      </a>
+      <a href="https://www.airbnb.com/jeffreys-bay-south-africa/stays" target="_blank" class="social-link">
+        <img src="../svg/airbnb.svg" alt="Airbnb" class="social-icon">
+      </a>
+      <a href="https://www.kouga.gov.za/" target="_blank">Municipality</a> 
+    </div>
+    <small>thestackeddevelopers@gmail.com</small>
+  </footer>
 </div>
-	<small>thestackeddevelopers@gmail.com</small>
-</footer>
-</body>
 
+</body>
 </html>
