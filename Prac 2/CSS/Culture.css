@@ -1,0 +1,71 @@
+.activitieslabel li {
+  background-color: white;
+  padding: 20px;      
+  font-weight: bold;
+  text-align: center;
+  
+    
+}
+/*consistent format for all the ordered list items*/
+
+#culturalact{
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    
+}
+/*used for the title of the page identification*/
+
+.CulturePhotos {
+  width: 500px;       
+  height: 400px;      
+  object-fit: cover;  
+  
+}
+/*sizing of images*/
+
+.cimages-container {
+  display: flex;
+  justify-content: space-evenly; 
+  margin-bottom: 50px;           
+  flex-wrap: wrap; 
+               
+}
+/*used to have consistent and centered spacing between the images on the culture page*/
+
+.cimage {
+  display: block;
+  border-top: 8px black solid;
+  border-right: 8px red solid;
+  border-bottom: 8px green solid;
+  border-left: 8px blue solid;
+}
+/*south african colours border*/
+
+
+
+th
+{
+    background-color: bisque;
+}
+
+td
+{
+
+    background-color: white;
+}
+td, th
+{
+
+
+    margin: 100px;
+    padding: 20px;
+
+    width: 800px;
+    height: 80px;
+
+}
+
+/*formatting for the table at the bottom*/
+
+
