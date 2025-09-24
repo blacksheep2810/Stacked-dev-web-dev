@@ -1,0 +1,102 @@
+body{
+	background-color:white;
+	padding-top: 3vw;
+	padding-bottom: 3vw;
+}
+
+.Container{
+	padding-top: 3vw;
+	padding-bottom: 3vw;
+	min-height: 100vh;
+}
+
+/* This styles NavBar, the navigation bar at the top*/
+#NavBar{
+	display:flex;
+	gap: 30px;
+}
+
+/*This styles the block NavBar is in*/
+#NavBarBlock{
+	position: fixed;
+	width: 100vw;
+	height: 3vw;
+	top: 0;
+	left: 0;
+	right: 0;
+	
+	background-color:black;
+	padding: 1rem;
+	
+	line-height: 1.5;
+}
+
+/*This styles the links in NavBar normally*/
+#NavBar a{
+	color: white;
+	text-decoration:none;
+}
+
+/*This styles the links in NavBar when hovered*/
+#NavBar a:hover{
+	color:white;
+	text-decoration:underline;
+	transform: scale(1.2);
+}
+
+/*This affects nav bars last child, sign in*/
+#NavBar a:last-child {
+  margin-left: auto;   /* pushes it to the right */
+  margin-right: 50px;  /* adds space from the edge */
+}
+
+.Panel {
+	background-color: #f9f9f9;
+      	border: 1px solid #ccc;
+      	padding: 20px;
+      	margin: 20px;
+      	border-radius: 10px;
+      	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      	max-width: 100vw;
+}
+
+/*Style of the bus image*/
+#busImage {
+	display:block;
+	border-top: 8px black solid;
+  	border-right: 8px red solid;
+  	border-bottom: 8px green solid;
+  	border-left: 8px blue solid;
+}
+/*Style of the wave video*/
+#waveVideo {
+	display:block;
+	border-top: 8px black solid;
+  	border-right: 8px red solid;
+  	border-bottom: 8px green solid;
+  	border-left: 8px blue solid;
+}
+
+/*This is the bar for the bottom info*/
+#FootBar {
+	position:fixed;
+	overflow:hidden;
+	bottom:0;
+	width: 100vw;
+	height: 3vw;
+	background-color:black;
+	padding: 1rem;
+	left:0;
+	line-height: 1.5;
+}
+/*text in the bottom bar*/
+#footer small{
+	position: absolute;
+	color:white;	
+}
+/*municipality link*/
+#footer a{
+	color:inherit;
+	text-decoration:none;
+	cursor:default;
+}
