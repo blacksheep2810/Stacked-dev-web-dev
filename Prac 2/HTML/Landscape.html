@@ -1,136 +1,284 @@
 <!DOCTYPE html>
-  <head>
-	<link rel="stylesheet" href="../CSS/Jeff.css">
-    	<meta charset="utf-8">
-    	<title>Visit Jeffrey's Bay</title>
+  <head> 
+    <link rel="stylesheet" href="../CSS/Jeff.css">
+    <link rel="stylesheet" href="../CSS/landscapes&menues.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visit Jeffrey's Bay</title> 
   </head>  
   
   <body>
-  <div id = NavBarBlock>
-<header>
-    <b>Visit Jeffrey's bay, <i>where love and peace meets the sun and sea</i></b>
-</header>
-<nav id="NavBar">
-    <a href="Home.html">Home</a>
-    <a href="Culture.html">Culture</a>
-    <a href="History.html">History</a>
-    <a href="Landscape.html">Landscape</a>
-    <a href="Suggestions.html">Share your experience</a>
-    <a href="About us.html">About us</a>
-    <a href="SignIn.html">Sign In</a>
-</nav>
-</div>	
-<div class=Container>
-	<h1><b><font color="#03045E">Where you're going ... </font></b></h1> 
-	<br>
-	<br>
-	<br>
-	<img src = "../images/Road to Gama.jpg" alt="De Gama Road.jpg" width="1400" height="500" image>
-	
-	<!-- where are you from input section -->
-	<h3>but first, where are you coming from?</h3> 
-	<label for="location">pick the province you're visiting from :</label> 
-	<input list="provinces" id="location" placeholder="i.e Select from the list"> 
-	<datalist id="provinces"> 
-		<option value="Gauteng">&#127960;</option>
-		<option value="Limpopo">&#129361;</option>
-		<option value="Mpumalanga">&#127796;</option>
-		<option value="North West">&#128176;</option>
-		<option value="Northern Cape">&#9728;</option>
-		<option value="Kwa-Zulu Natal">&#127754;</option>
-		<option value="Western Cape">&#127940;</option>
-		<option value="Eastern Cape">&#10084;</option>
-<!-- will be expanded on later --> 
-	</datalist> 
-	<br> 
-	<br> 
-	<br>
-	<img src = "../images/jeff bay overview.gif" alt="Map.jpg" width="1400" height="650" image> 
-	<br> 
-	<br> 
-	<br>	
-	<table border="2"> 
-		<caption><b><font size="5">Jeffrey's Bay GeoFormations</font></b></caption>
-		<tr> 
-			<th>Formation Name</th>
-			<th>Rock Type</th> 
-			<th>Period</th>
-			<th>Interesting Features</th>
-		</tr> 
-		
-		<tr> 
-			<td>Lourensford Formation</td>
-			<td>Sandtones & Shales</td>
-			<td>Permian</td>
-			<td>Fossil traces</td> 
-		</tr> 
-		
-		<tr> 
-			<td>Algoa Formation</td>
-			<td>Sandtones & Conglomerates</td>
-			<td>Permian</td>
-			<td>Shallow Marine deposits</td> 
-		</tr> 
-		<tr> 
-			<td>Coastal Cliff Outcrops</td>
-			<td>Sandtones & Shales</td>
-			<td>Permian</td>
-			<td>Cliffside sedimentary structures</td> 
-		</tr> 
-		<tr> 
-			<td>Jeffrey's Bay Dunes</td>
-			<td>Quartz Sandstones</td>
-			<td>Holocene</td>
-			<td>Coastal Dune Systems</td> 
-		</tr>  		
-	</table> 
-	
-	<br>
-	<br>
-	<br>
-	
-	<table border="3" width="80%"> 
-	  <caption><b><font color="#B22222" size="5">Weather</font></b></caption> 
+  <div id="NavBarBlock">
+    <header>
+        <b>Visit Jeffrey's Bay, <i>where love and peace meets the sun and sea</i></b>
+    </header>
+    <nav id="NavBar">
+        <a href="Home.html">Home</a>
+        <a href="Culture.html">Culture</a>
+        <a href="History.html">History</a>
+        <a href="Landscape.html">Landscape</a>
+        <a href="Suggestions.html">Share your experience</a>
+        <a href="About us.html">About us</a>
+        <a href="SignIn.html">Sign In</a>
+    </nav>
+  </div>  
+    
+  <div class="Container">
+    <h1><b>Where you're going ...</b></h1> 
+    
+    <div class="image-spacer">
+        <img src="../images/Road to Gama.jpg" alt="De Gama Road" width="1400" height="500">
+    </div>
+    
+    <!-- where are you from input section -->
+    <div class="location-input">
+        <h3>But first, where are you coming from?</h3> 
+        <label for="location">Pick the province you're visiting from:</label> 
+        <input list="provinces" id="location" placeholder="Select from the list"> 
+        <datalist id="provinces"> 
+            <option value="Gauteng">&#127960; Gauteng</option>
+            <option value="Limpopo">&#129361; Limpopo</option>
+            <option value="Mpumalanga">&#127796; Mpumalanga</option>
+            <option value="North West">&#128176; North West</option>
+            <option value="Northern Cape">&#9728; Northen Cape</option>
+            <option value="Kwa-Zulu Natal">&#127754; Kwa-Zulu Natal</option>
+            <option value="Western Cape">&#127940; Western Cape</option>
+            <option value="Eastern Cape">&#10084; Eastern Cape</option>
+        </datalist> 
+    </div>
+    
+    <div class="image-spacer">
+        <img src="../images/jeff bay overview.gif" alt="Jeffrey's Bay Map" width="1400" height="650"> 
+    </div>
+    
+    <!-- Geological Formations Table -->
+    <div class="geo-section">
+        <table class="geo-table"> 
+            <caption>Jeffrey's Bay GeoFormations</caption>
+            <tr> 
+                <th>Formation Name</th>
+                <th>Rock Type</th> 
+                <th>Period</th>
+                <th>Interesting Features</th>
+            </tr> 
+            
+            <tr> 
+                <td>Lourensford Formation</td>
+                <td>Sandstones & Shales</td>
+                <td>Permian</td>
+                <td>Fossil traces</td> 
+            </tr> 
+            
+            <tr> 
+                <td>Algoa Formation</td>
+                <td>Sandstones & Conglomerates</td>
+                <td>Permian</td>
+                <td>Shallow Marine deposits</td> 
+            </tr> 
+            <tr> 
+                <td>Coastal Cliff Outcrops</td>
+                <td>Sandstones & Shales</td>
+                <td>Permian</td>
+                <td>Cliffside sedimentary structures</td> 
+            </tr> 
+            <tr> 
+                <td>Jeffrey's Bay Dunes</td>
+                <td>Quartz Sandstones</td>
+                <td>Holocene</td>
+                <td>Coastal Dune Systems</td> 
+            </tr>  		
+        </table> 
+    </div>
+    
+    <div class="spacer"></div>
+    
+    <!-- Image Gallery Section -->
+    <section class="gallery-section">
+        <h2 class="gallery-title">🏞️ Jeffrey's Bay Landscape Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="../images/landscape1.jpg" alt="Coastal View">
+                <div class="gallery-caption">Stunning Coastal Cliffs</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/landscape2.jpg" alt="Beach Scene">
+                <div class="gallery-caption">Pristine Beaches</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/landscape3.jpg" alt="Dune System">
+                <div class="gallery-caption">Unique Dune Systems</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/landscape4.jpg" alt="Rock Formations">
+                <div class="gallery-caption">Ancient Rock Formations</div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="spacer"></div>
+    
+    <!-- Climate Information Table -->
+    <div class="climate-section">
+        <table class="climate-table"> 
+            <caption>Jeffrey's Bay Climate Information</caption>
+            <tr> 
+                <th>Season</th>
+                <th>Temperature Range</th> 
+                <th>Precipitation</th>
+                <th>Best Activities</th>
+                <th>Special Features</th>
+            </tr> 
+            
+            <tr> 
+                <td>Summer (Dec-Feb)</td>
+                <td>20°C - 28°C</td>
+                <td>Low rainfall</td>
+                <td>Surfing, Swimming, Beach activities</td> 
+                <td>Perfect wave conditions</td>
+            </tr> 
+            
+            <tr> 
+                <td>Autumn (Mar-May)</td>
+                <td>15°C - 25°C</td>
+                <td>Moderate rainfall</td>
+                <td>Hiking, Fishing, Whale watching</td> 
+                <td>Migrating whale sightings</td>
+            </tr> 
+            
+            <tr> 
+                <td>Winter (Jun-Aug)</td>
+                <td>10°C - 20°C</td>
+                <td>Higher rainfall</td>
+                <td>Storm watching, Cosy retreats</td> 
+                <td>Dramatic coastal storms</td>
+            </tr> 
+            
+            <tr> 
+                <td>Spring (Sep-Nov)</td>
+                <td>15°C - 25°C</td>
+                <td>Moderate rainfall</td>
+                <td>Wildflower viewing, Bird watching</td> 
+                <td>Coastal wildflower blooms</td>
+            </tr>  		
+        </table> 
+    </div>
+    
+    <div class="spacer"></div>
+    
+    <!-- Additional landscape image -->
+    <div class="image-spacer">
+        <img src="../images/landscape-overview.jpg" alt="Jeffrey's Bay Overview" width="1400" height="500">
+    </div>
+    
+    <!-- ===== ROUTES TO JEFFREY'S BAY SECTION ===== -->
+    <section class="routes-section">
+        <h2 class="routes-title">🚗 Main Routes to Jeffrey's Bay</h2>
+        
+        <div class="driving-tips">
+            <h3 class="tips-title">💡 Driving Tips</h3>
+            <ul>
+                <li>Check tide times for coastal routes</li>
+                <li>Pack water and snacks</li>
+                <li>Allow extra time for scenic stops</li>
+                <li>Watch for wildlife crossings</li>
+            </ul>
+        </div>
+        
+        <div class="routes-container">
+            <article class="route-card clearfix">
+                <img src="../images/n2-highway.jpg" alt="N2 Highway" class="route-image">
+                <span class="distance-tag">75km from PE</span>
+                <h3>N2 Highway (Coastal Route)</h3>
+                <div class="route-details">
+                    <p><strong>From Port Elizabeth:</strong> The most popular route offering stunning coastal views.</p>
+                    <ul class="route-highlights">
+                        <li>Van Stadens River Bridge</li>
+                        <li>Seaview Lion Park</li>
+                        <li>Paradise Beach</li>
+                        <li>Kabeljauws Beach</li>
+                    </ul>
+                </div>
+            </article> 
+			
+			 <!-- Route 2: R102 Scenic Route -->
+        <article class="route-card clearfix">
+            <img src="../images/r102-scenic.jpg" alt="R102 Scenic Route" class="route-image">
+            <span class="distance-tag">85km from PE</span>
+            <h3>R102 (Scenic Alternative)</h3>
+            <div class="route-details">
+                <p><strong>Old coastal road:</strong> Slower but more scenic with historic stops.</p>
+                <ul class="route-highlights">
+                    <li>Chelsea Lighthouse</li>
+                    <li>St. Francis Bay</li>
+                    <li>Oyster Bay viewpoints</li>
+                    <li>Historical fishing villages</li>
+                </ul>
+            </div>
+        </article>
+        
+        <!-- Route 3: Inland Route -->
+        <article class="route-card clearfix">
+            <img src="../images/inland-route.jpg" alt="Inland Route" class="route-image">
+            <span class="distance-tag">100km from PE</span>
+            <h3>Inland Route via Humansdorp</h3>
+            <div class="route-details">
+                <p><strong>From inland areas:</strong> Quicker route avoiding coastal traffic.</p>
+                <ul class="route-highlights">
+                    <li>Gamtoos River Valley</li>
+                    <li>Hankey viewpoints</li>
+                    <li>Loerie Dam</li>
+                    <li>Agricultural landscapes</li>
+                </ul>
+            </div>
+        </article>
+        
+        <!-- Route 4: Adventure Route -->
+        <article class="route-card clearfix">
+            <img src="../images/gravel-road.jpg" alt="Adventure Route" class="route-image">
+            <span class="distance-tag">Various distances</span>
+            <h3>4x4 & Adventure Routes</h3>
+            <div class="route-details">
+                <p><strong>For adventurers:</strong> Gravel roads offering unique perspectives.</p>
+                <ul class="route-highlights">
+                    <li>Baviaanskloof access</li>
+                    <li>Mountain passes</li>
+                    <li>Private nature reserves</li>
+                    <li>Remote beach access</li>
+                </ul>
+            </div>
+        </article>
+            
 
-	  <tr> 
-		<th><font size="3" color="#B22222">Hot Season</font></th>
-	  </tr> 
-	  <tr> 
-		<td>
-		  <img src="../images/Hot Season.jpg" alt="Hot Season" image><br> 
-		  <small>Info about summer season</small>
-		</td>
-	  </tr>
-
-	  <tr>
-		<th><font size="3" color="#B22222">Cold Season</font></th>
-	  </tr>
-	  <tr>
-		<td>
-		  <img src="../images/Winter.jpg" alt="Cold Season" image><br> 
-		  <small>Info about winter season</small>
-		</td>
-	  </tr>
-	</table>
-
-	<ul>
-		<li>Big rocks</li>
-		<li>Small rocks</li>
-		<li>Short rocks</li>
-		<li>Tall rocks</li>	
-	</ul>
-</Container>
-	
+        </div>
+    </section> 
+    
+    <div class="spacer"></div>
+    
+    <!-- Final landscape image -->
+    <div class="image-spacer">
+        <img src="../images/final-landscape.jpg" alt="Sunset at Jeffrey's Bay" width="1400" height="500">
+    </div>
+  </div>
+    
+ 
+  </div>
+<div class="FootBarSpace"></div>
 <div id=FootBar>
 <footer id="footer">
-    	<small>
-	2025 
-	<a href="https://www.kouga.gov.za/" target="_blank"> Municipality</a>
-	thestackeddevelopers@gmail.com
-	</small>
-
-</footer>
+	<div class="social-icons">
+	<a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fjeffreysbayonline%2F" target="_blank" class="social-link">
+            <img src="../svg/facebook.svg" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/jeffreysbaytourism/?hl=en" target="_blank" class="social-link">
+            <img src="../svg/insta.svg" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://www.airbnb.com/jeffreys-bay-south-africa/stays" target="_blank" class="social-link">
+            <img src="../svg/airbnb.svg" alt="Airbnb" class="social-icon">
+        </a>
+	<a href="https://www.kouga.gov.za/"target="_blank">Municipality</a> 
 </div>
-  </body>
+	<small>thestackeddevelopers@gmail.com</small>
+</footer>
+</body>
 
 </html>

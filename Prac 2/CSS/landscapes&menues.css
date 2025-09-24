@@ -1,0 +1,305 @@
+/* =====> GLOBAL STYLES <===== */
+* /*{
+    background: #FBFAF5; /* Cream background */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #5D4037; /* Earth brown for text */
+}
+
+
+/* =====> MAIN CONTAINER STYLES <===== */
+/* .Container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+} */
+
+/* =====> HEADING STYLES <===== */
+h1, h2, h3 {
+    color: #03045E; /* Navy */
+    margin-bottom: 1rem;
+}
+
+/* =====> TABLE STYLES <===== */
+.geo-table, .climate-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+.geo-table caption, .climate-table caption {
+    background: #03045E; /* Navy */
+    color: #FBFAF5; /* Cream */
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.geo-table th, .climate-table th {
+    background: #8B4513; /* Earth brown */
+    color: #FBFAF5; /* Cream */
+    padding: 1rem;
+    text-align: left;
+}
+
+.geo-table td, .climate-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    background: white;
+}
+
+.geo-table tr:nth-child(even) td, .climate-table tr:nth-child(even) td {
+    background: #f8f9fa;
+}
+
+/* =====> IMAGE GALLERY STYLES <===== */
+.gallery-section {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+}
+
+.gallery-title {
+    color: #03045E; /* Navy */
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.gallery-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+}
+
+.gallery-item {
+    min-width: 300px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-caption {
+    padding: 1rem;
+    text-align: center;
+    background: #03045E; /* Navy */
+    color: #FBFAF5; /* Cream */
+}
+
+/* =====> SPACER STYLES <===== */
+.spacer {
+    height: 100px;
+    background: transparent;
+}
+
+.image-spacer {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.image-spacer img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+/* =====> FORM STYLES <===== */
+.location-input {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+.location-input h3 {
+    color: #03045E; /* Navy */
+    margin-bottom: 1rem;
+}
+
+.location-input label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #5D4037; /* Earth brown */
+    font-weight: bold;
+}
+
+.location-input input {
+    padding: 0.5rem;
+    border: 2px solid #03045E; /* Navy */
+    border-radius: 5px;
+    width: 300px;
+    max-width: 100%;
+}
+
+
+
+
+/* =====> RESPONSIVE STYLES <===== */
+
+    
+    .gallery-container {
+        flex-direction: column;
+    }
+    
+    .gallery-item {
+        min-width: 100%;
+    }
+    
+    .location-input input {
+        width: 100%;
+    }
+}
+
+/* =====> ROUTES TO JEFFREY'S BAY SECTION <===== */
+.routes-section {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+    border-left: 5px solid #03045E;
+}
+
+.routes-title {
+    color: #03045E;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+}
+
+/* Multi-column layout for route cards */
+.routes-container {
+    column-count: 3;
+    column-gap: 30px;
+    column-rule: 2px solid #0077b6;
+}
+
+.route-card {
+    break-inside: avoid;
+    background: #FBFAF5;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    border-top: 4px solid #f0d0af;
+}
+
+
+.route-image {
+    float: left;
+    width: 120px;
+    height: 80px;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    object-fit: cover;
+    shape-outside: margin-box;
+}
+
+.route-card h3 {
+    color: #03045E;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    clear: right; /* ensure heading clears floated image */
+}
+
+.route-details {
+    overflow: hidden; /* clears the float */
+}
+
+.route-highlights { 
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.route-highlights li {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.route-highlights li:before {
+	z-index: 0;
+    content: "📍";
+    position: absolute;
+    left: -1.5rem;
+}
+
+/* Clearfix for floated elements */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Float-based callout boxes */
+.driving-tips {
+    float: right;
+    width: 300px;
+    margin: 1rem 0 1rem 2rem;
+    padding: 1.5rem;
+    background: ##FBFAF5;
+    border-radius: 10px;
+    border: 2px solid #0077b6;
+}
+
+.tips-title {
+    color: #03045E;
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Responsive columns */
+@media (max-width: 1024px) {
+    .routes-container {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .routes-container {
+        column-count: 1;
+    }
+    
+    .driving-tips {
+        float: none;
+        width: 100%;
+        margin: 1rem 0;
+    }
+    
+    .route-image {
+        float: none;
+        width: 100%;
+        height: 150px;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Special float effect for distance indicators */
+.distance-tag {
+    float: right;
+    background: #03045E;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
