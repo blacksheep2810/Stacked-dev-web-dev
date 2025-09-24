@@ -3,7 +3,10 @@ body{
 	padding-top: 3vw;
 	padding-bottom: 3vw;
 }
-
+header{
+	color:white;
+}
+/*Container class used in each page to avoid overlap between nav bars and contents*/
 .Container{
 	padding-top: 3vw;
 	padding-bottom: 3vw;
@@ -50,6 +53,20 @@ body{
   margin-right: 50px;  /* adds space from the edge */
 }
 
+/*This styles the links in Footbar normally*/
+#FootBar a{
+	color: white;
+	text-decoration:none;
+}
+
+/*This styles the links in FootBar when hovered*/
+#FootBar a:hover{
+	color:white;
+	text-decoration:underline;
+	transform: scale(1.2);
+}
+
+/*Class for the various panels used across the website*/
 .Panel {
 	background-color: #f9f9f9;
       	border: 1px solid #ccc;
@@ -58,6 +75,18 @@ body{
       	border-radius: 10px;
       	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       	max-width: 100vw;
+}
+
+/*Class for Panels on the history page, needed to increase font size*/
+.HistoryPanel {
+	background-color: #f9f9f9;
+      	border: 1px solid #ccc;
+      	padding: 20px;
+      	margin: 20px;
+      	border-radius: 10px;
+      	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      	max-width: 100vw;
+	font-size: 20px;
 }
 
 /*Style of the bus image*/
@@ -93,10 +122,4 @@ body{
 #footer small{
 	position: absolute;
 	color:white;	
-}
-/*municipality link*/
-#footer a{
-	color:inherit;
-	text-decoration:none;
-	cursor:default;
 }
