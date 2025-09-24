@@ -10,183 +10,232 @@ h1 {
   font-size: 3.5rem;
 }
 
-body{
-	background-color:white;
-	padding-top: 3vw;
-	padding-bottom: 3vw;
-}
-header{
-	color:white;
-}
-/*Container class used in each page to avoid overlap between nav bars and contents*/
-.Container{
-	padding-top: 3vw;
-	padding-bottom: 3vw;
-	min-height: 100vh;
+body {
+  background-color: white;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  margin: 0;
 }
 
-/* This styles NavBar, the navigation bar at the top*/
-#NavBar{ 
-	
-	display:flex;
-	gap: 30px;
+header {
+  color: white;
 }
 
-/*This styles the block NavBar is in*/
-#NavBarBlock{ 
-	z-index: 1;
-	position: fixed;
-	width: 100vw;
-	height: 3vw;
-	top: 0;
-	left: 0;
-	right: 0;
-	
-	background-color:black;
-	padding: 1rem;
-	
-	line-height: 1.5;
+/* Container class used in each page to avoid overlap between nav bars and contents */
+.Container {
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  min-height: 100vh;
 }
 
-/*This styles the links in NavBar normally*/
-#NavBar a{
-	color: white;
-	text-decoration:none;
+/* NavBar styles */
+#NavBar { 
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
 
-/*This styles the links in NavBar when hovered*/
-#NavBar a:hover{
-	color:white;
-	text-decoration:underline;
-	transform: scale(1.2);
+#NavBarBlock { 
+  z-index: 1;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  padding: 1rem 2rem;
+  line-height: 1.5;
 }
 
-/*This affects nav bars last child, sign in*/
+#NavBar a {
+  color: white;
+  text-decoration: none;
+}
+
+#NavBar a:hover {
+  color: white;
+  text-decoration: underline;
+  transform: scale(1.2);
+}
+
 #NavBar a:last-child {
   margin-left: auto;   /* pushes it to the right */
   margin-right: 50px;  /* adds space from the edge */
 }
 
-/*This styles the links in Footbar normally*/
-#FootBar a{
-	color: white;
-	text-decoration:none;
+/* Footbar link styles */
+#FootBar a {
+  color: white;
+  text-decoration: none;
 }
 
-/*This styles the links in FootBar when hovered*/
-#FootBar a:hover{
-	color:white;
-	text-decoration:underline;
-	transform: scale(1.2);
+#FootBar a:hover {
+  color: white;
+  text-decoration: underline;
+  transform: scale(1.2);
 }
 
-/*Class for the various panels used across the website*/
+/* Panels */
 .Panel {
-	background-color: #f9f9f9;
-      	border: 1px solid #ccc;
-      	padding: 20px;
-      	margin: 20px;
-      	border-radius: 10px;
-      	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      	max-width: 100vw;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  text-align: center;
 }
 
-/*Class for Panels on the history page, needed to increase font size*/
 .HistoryPanel {
-	background-color: #f9f9f9;
-      	border: 1px solid #ccc;
-      	padding: 20px;
-      	margin: 20px;
-      	border-radius: 10px;
-      	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      	max-width: 100vw;
-	font-size: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  font-size: 20px;
+  text-align: center;
 }
 
-/*Style of the bus image*/
-#busImage {
-	display:block;
-	border-top: 8px black solid;
-  	border-right: 8px red solid;
-  	border-bottom: 8px green solid;
-  	border-left: 8px blue solid;
-}
-/*Style of the wave video*/
+/* Images & video */
+#busImage,
 #waveVideo {
-	display:block;
-	border-top: 8px black solid;
-  	border-right: 8px red solid;
-  	border-bottom: 8px green solid;
-  	border-left: 8px blue solid;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 4px solid #333;
 }
 
-/*This is the bar for the bottom info*/
+/* Footer */
 #FootBar {
-	position:fixed;
-	
-	bottom:0;
-	width: 100vw;
-	height: 5vw;
-	background-color:black;
-	padding: 1rem;
-	left:0;
-	line-height: 1.5;
-}
-/*text in the bottom bar*/
-#footer small{
-	position: absolute;
-	color:white;	
-} 
-
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 1rem 0;
-}
-
-.social-link {
-    display: inline-block;
-}
-
-.social-icon {
-    width: 30px;
-    height: 20px;
-    filter: brightness(0) invert(1); /* Makes SVG white */
-}
-
-/* Footer layout adjustments */
-#footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
-.footer-nav {
-    margin-bottom: 0.5rem;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: black;
+  padding: 1rem;
+  left: 0;
+  line-height: 1.5;
 }
 
 #footer small {
-    position: relative;
-    margin-top: 0.5rem;
+  position: absolute;
+  color: white; 
 }
 
-/* responsive social icons */
-@media (max-width: 768px) {
-    .social-icons {
-        gap: 15px;
-    }
-    
-    .social-icon {
-        width: 25px;
-        height: 25px;
-    }
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 1rem 0;
+}
+
+.social-link {
+  display: inline-block;
+}
+
+.social-icon {
+  width: 30px;
+  height: 20px;
+  filter: brightness(0) invert(1); /* Makes SVG white */
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.footer-nav {
+  margin-bottom: 0.5rem;
+}
+
+#footer small {
+  position: relative;
+  margin-top: 0.5rem;
 }
 
 .FootBarSpace {
-    height: 120px; 
+  height: 120px; 
+}
+
+/* ========================= */
+/* 📱 Responsive Design */
+/* ========================= */
+
+/* Tablets (≤ 768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #NavBar {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  #NavBar a:last-child {
+    margin-right: 0;
+  }
+
+  .Panel, .HistoryPanel {
+    padding: 15px;
+    margin: 15px auto;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+
+  .social-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Phones (≤ 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #NavBar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  #NavBar a {
+    margin: 0.2rem 0;
+  }
+
+  #NavBar a:last-child {
+    margin: 0.5rem 0 0 0;
+    align-self: flex-start;
+  }
+
+  .Panel, .HistoryPanel {
+    padding: 10px;
+    margin: 10px auto;
+  }
+
+  #busImage,
+  #waveVideo {
+    width: 100%;
+    border-width: 2px;
+  }
+
+  #FootBar {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
 }
