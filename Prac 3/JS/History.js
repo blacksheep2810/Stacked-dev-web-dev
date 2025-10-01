@@ -2,7 +2,7 @@ const RightArrow = document.getElementById("RightArrow");
 const LeftArrow = document.getElementById("LeftArrow");
 
 let HistoryState=1;
-
+//these two handle the on click events for when the buttons are pressed, changing the state for the switch case and then fading into the next event
 RightArrow.addEventListener("click", () => {
   HistoryState++;
   fadePanelChildren(UpdatePanel);
@@ -12,7 +12,7 @@ LeftArrow.addEventListener("click", () => {
   HistoryState--;
   fadePanelChildren(UpdatePanel);
 });
-
+//switch cases for the different panels
 function UpdatePanel(){
 	switch (HistoryState) {
   		case 1:
@@ -53,7 +53,7 @@ function UpdatePanel(){
 		break;
 	}
 } 
-
+//function to handle the fade in effect
 function fadePanelChildren(updateFunction) {
     const panel = document.getElementById("HistoryPanel");
     panel.classList.add("fade-out");
