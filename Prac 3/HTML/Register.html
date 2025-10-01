@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../CSS/Jeff.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Register - Jeffrey's Bay</title>
+</head>
+<body style="background-color: #BFDBF7;">
+    <div style="background-color: white; padding: 20px;">
+        <header>
+            <b>Visit Jeffrey's Bay, where love and peace meets the sun and sea</b>
+        </header>
+
+        <nav>
+            <a href="Home.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Culture.html">Culture</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="History.html">History</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Landscape.html">Landscape</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.kouga.gov.za/" target="_blank">Municipality</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Suggestions.html">Share your experience</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="About us.html">About us</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Admin.html">Sign In</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        </nav>
+    </div>
+
+    <div style="background-color: white; padding: 20px; margin-top: 10px;">
+        <h1>Create Account</h1>
+        
+        <form action="register.php" method="post">
+            <div>
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+            <div>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <br>
+            <div>
+                <label for="confirm_password">Confirm Password:</label><br>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Register">
+            </div>
+        </form>
+        
+        <br>
+        <p>Already have an account? <a href="Admin.html">Sign in here</a></p>
+    </div>
+
+    <footer>
+        <small>2025 TheStackedDevelopers@gmail.com</small>
+    </footer>
+</body>
+</html>
