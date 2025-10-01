@@ -1,37 +1,36 @@
 /* =====> GLOBAL STYLES <===== */
-* /*{
-    background: #FBFAF5; /* Cream background */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #5D4037; /* Earth brown for text */
+    background: #FBFAF5; /* Cream background */
 }
 
-
-/* =====> MAIN CONTAINER STYLES <===== */
-/* .Container {
+/* main */
+.Container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 2rem;
-} */
+}
 
-/* =====> HEADING STYLES <===== */
+/*headings*/
 h1, h2, h3 {
     color: #03045E; /* Navy */
     margin-bottom: 1rem;
 }
-
-/* =====> TABLE STYLES <===== */
+/* tables */
 .geo-table, .climate-table {
     width: 100%;
     border-collapse: collapse;
     margin: 2rem 0;
     box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    background: white;
 }
 
 .geo-table caption, .climate-table caption {
@@ -59,12 +58,13 @@ h1, h2, h3 {
     background: #f8f9fa;
 }
 
-/* =====> IMAGE GALLERY STYLES <===== */
+/* gallery */
 .gallery-section {
     margin: 3rem 0;
     padding: 2rem;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     border-radius: 15px;
+    border: 2px solid #03045E;
 }
 
 .gallery-title {
@@ -72,37 +72,50 @@ h1, h2, h3 {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-.gallery-container {
-    display: flex;
-    gap: 1rem;
-    overflow-x: auto;
-    padding: 1rem 0;
+/* Hide all gallery slides except first */
+.gallery-slide:not(:first-child) {
+    display: none;
 }
 
-.gallery-item {
-    min-width: 300px;
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
-}
-
-.gallery-item img {
+/*make gallery slides not shift in size*/
+.gallery-slide img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 600px;         /* fixed height */
+    object-fit: cover;     /* ensures image fills the box without stretching */
+    border-radius: 8px;
 }
 
-.gallery-caption {
-    padding: 1rem;
+/* Simple gallery controls */
+.gallery-controls {
     text-align: center;
-    background: #03045E; /* Navy */
-    color: #FBFAF5; /* Cream */
+    margin: 20px 0;
 }
 
-/* =====> SPACER STYLES <===== */
+.gallery-controls button {
+    background: #03045E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gallery-controls button:hover {
+    background: #0077b6;
+}
+
+.gallery-controls span {
+    margin: 0 15px;
+    font-weight: bold;
+    color: #03045E;
+    font-size: 1.1rem;
+}
+
+/* spacers */
 .spacer {
     height: 100px;
     background: transparent;
@@ -120,13 +133,14 @@ h1, h2, h3 {
     box-shadow: 0 3px 15px rgba(0,0,0,0.1);
 }
 
-/* =====> FORM STYLES <===== */
+/* fomrs */
 .location-input {
     margin: 2rem 0;
     padding: 2rem;
     background: white;
     border-radius: 10px;
     box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    border-left: 4px solid #03045E;
 }
 
 .location-input h3 {
@@ -147,28 +161,16 @@ h1, h2, h3 {
     border-radius: 5px;
     width: 300px;
     max-width: 100%;
+    font-size: 1rem;
 }
 
-
-
-
-/* =====> RESPONSIVE STYLES <===== */
-
-    
-    .gallery-container {
-        flex-direction: column;
-    }
-    
-    .gallery-item {
-        min-width: 100%;
-    }
-    
-    .location-input input {
-        width: 100%;
-    }
+.location-input input:focus {
+    outline: none;
+    border-color: #0077b6;
+    box-shadow: 0 0 5px rgba(0,119,182,0.3);
 }
 
-/* =====> ROUTES TO JEFFREY'S BAY SECTION <===== */
+/* routes */
 .routes-section {
     margin: 3rem 0;
     padding: 2rem;
@@ -184,15 +186,17 @@ h1, h2, h3 {
     font-size: 2.2rem;
 }
 
-/* Multi-column layout for route cards */
+/* Simple routes container */
 .routes-container {
-    column-count: 3;
-    column-gap: 30px;
-    column-rule: 2px solid #0077b6;
+    margin: 2rem 0;
+}
+
+/* Hide all route cards except first */
+.route-card:not(:first-child) {
+    display: none;
 }
 
 .route-card {
-    break-inside: avoid;
     background: #FBFAF5;
     padding: 1.5rem;
     margin-bottom: 2rem;
@@ -201,6 +205,9 @@ h1, h2, h3 {
     border-top: 4px solid #f0d0af;
 }
 
+.route-card:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
 
 .route-image {
     float: left;
@@ -235,8 +242,7 @@ h1, h2, h3 {
 }
 
 .route-highlights li:before {
-	z-index: 0;
-    content: "📍";
+    z-index: 0;
     position: absolute;
     left: -1.5rem;
 }
@@ -248,35 +254,90 @@ h1, h2, h3 {
     clear: both;
 }
 
+/* Simple route controls */
+.route-controls {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.route-controls button {
+    background: #03045E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.route-controls button:hover {
+    background: #0077b6;
+}
+
+.route-controls span {
+    margin: 0 15px;
+    font-weight: bold;
+    color: #03045E;
+    font-size: 1.1rem;
+}
+
 /* Float-based callout boxes */
 .driving-tips {
     float: right;
     width: 300px;
     margin: 1rem 0 1rem 2rem;
     padding: 1.5rem;
-    background: ##FBFAF5;
+    background: #FBFAF5;
     border-radius: 10px;
     border: 2px solid #0077b6;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
 .tips-title {
     color: #03045E;
     margin-top: 0;
     text-align: center;
+    border-bottom: 2px solid #0077b6;
+    padding-bottom: 0.5rem;
 }
 
-/* Responsive columns */
+.driving-tips ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.driving-tips li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.driving-tips li:before {
+    
+    position: absolute;
+    left: 0;
+}
+
+/* Special float effect for distance indicators */
+.distance-tag {
+    float: right;
+    background: #03045E;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+/* responsive styles */
 @media (max-width: 1024px) {
-    .routes-container {
-        column-count: 2;
+    .Container {
+        padding: 1.5rem;
     }
 }
 
 @media (max-width: 768px) {
-    .routes-container {
-        column-count: 1;
-    }
-    
     .driving-tips {
         float: none;
         width: 100%;
@@ -290,16 +351,65 @@ h1, h2, h3 {
         margin-right: 0;
         margin-bottom: 1rem;
     }
+    
+    .gallery-section {
+        padding: 1rem;
+        margin: 2rem 0;
+    }
+    
+    .location-input {
+        padding: 1.5rem;
+    }
+    
+    .geo-table, .climate-table {
+        font-size: 0.9rem;
+    }
+    
+    .geo-table th, .climate-table th,
+    .geo-table td, .climate-table td {
+        padding: 0.8rem;
+    }
 }
 
-/* Special float effect for distance indicators */
-.distance-tag {
-    float: right;
-    background: #03045E;
-    color: white;
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    margin-left: 1rem;
+@media (max-width: 480px) {
+    .Container {
+        padding: 1rem;
+    }
+    
+    .gallery-title, .routes-title {
+        font-size: 1.5rem;
+    }
+    
+    .location-input input {
+        width: 100%;
+    }
+    
+    .routes-section {
+        padding: 1rem;
+    }
+    
+    .gallery-controls button,
+    .route-controls button {
+        padding: 8px 15px;
+        margin: 0 5px;
+        font-size: 0.9rem;
+    }
+}
+
+/* accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .route-card {
+        transition: none;
+    }
+}
+
+/* high contrast mode support */
+@media (prefers-contrast: high) {
+    .route-card {
+        border: 2px solid #000;
+    }
+    
+    .gallery-section, .routes-section {
+        border: 2px solid #000;
+    }
 }

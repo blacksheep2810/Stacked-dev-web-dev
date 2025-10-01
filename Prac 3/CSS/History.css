@@ -1,0 +1,60 @@
+/*Panel the images go on*/
+#HistoryPanel {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin:50px auto;
+  width: 70vw;
+  height: auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+/*Fade in effect targeting only children of the HistoryPanel*/
+#HistoryPanel > * {
+  transition: opacity 0.5s ease-in-out;
+}
+
+#HistoryPanel.fade-out > * {
+  opacity: 0;
+}
+
+#HistoryPanel.fade-in > * {
+  opacity: 1;
+}
+
+/*Specific styling fot the H1 on the history page so it can have its own font*/
+#HistoryTitle{
+  font-family: system-ui;
+}
+
+/*Styling for the row of images*/
+.image-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*attributes for the images*/
+.image-row img {
+  flex: 1;
+  width: 100%;
+  max-width: 33.3%;
+  height: 25vh;
+  object-fit:cover;
+}
+/*This combined with .arrow puts the arrows on either side of the box*/
+.panel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.arrow {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
