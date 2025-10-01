@@ -29,11 +29,11 @@ function validateLogin(event) {
     return false;
   }
 
-  // If all checks pass, allow the form to submit
+  // if all checks pass, allow the form to submit
   return true;
 }
 
-// Attach the validator to the form submit event
+// attach the validator to the form submit event
 if (loginForm) {
   loginForm.addEventListener('submit', validateLogin);
 }
