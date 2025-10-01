@@ -370,3 +370,30 @@ header {
   margin: 0.5rem 0;
   font-size: 1.1rem;
 }
+/*Stylings for a message box in the bottom right corner*/
+#messageBox {
+    display: none;
+    position: fixed;
+    bottom: 20px;   
+    right: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    font-family: sans-serif;
+    max-width: 300px;
+}
+
+#messageBox span#closeBtn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 3px 8px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+}
+

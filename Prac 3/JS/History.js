@@ -65,3 +65,4 @@ function fadePanelChildren(updateFunction) {
         panel.classList.add("fade-in");  // fade back in
     }, 500);
 }
+
