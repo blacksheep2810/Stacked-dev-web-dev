@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../CSS/Jeff.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Register - Jeffrey's Bay</title>
+</head>
+<body>
+    <div id = NavBarBlock>
+<header>
+    <b>Visit Jeffrey's bay, <i>where love and peace meets the sun and sea</i></b>
+</header>
+
+<nav id="NavBar">
+    <a href="Home.html">Home</a>
+    <a href="Culture.html">Culture</a>
+    <a href="History.html">History</a>
+    <a href="Landscape.html">Landscape</a>
+    <a href="Suggestions.html">Share your experience</a>
+    <a href="About us.html">About us</a>
+    <a href="SignIn.html">Sign In</a>
+</nav>
+</div>
+    <div style="background-color: white; padding: 20px; margin-top: 10px;">
+        <h1>Create Account</h1>
+        
+        <form action="register.php" method="post">
+            <div>
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+            <div>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <br>
+            <div>
+                <label for="confirm_password">Confirm Password:</label><br>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Register">
+            </div>
+        </form>
+        
+        <br>
+        <p>Already have an account? <a href="SignIn.html">Sign in here</a></p>
+    </div>
+<div id=FootBar>
+<footer id="footer">
+	<div class="social-icons">
+	<a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fjeffreysbayonline%2F" target="_blank" class="social-link">
+            <img src="../svg/facebook.svg" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/jeffreysbaytourism/?hl=en" target="_blank" class="social-link">
+            <img src="../svg/insta.svg" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://www.airbnb.com/jeffreys-bay-south-africa/stays" target="_blank" class="social-link">
+            <img src="../svg/airbnb.svg" alt="Airbnb" class="social-icon">
+        </a>
+	<a href="https://www.kouga.gov.za/"target="_blank">Municipality</a> 
+</div>
+	<small>thestackeddevelopers@gmail.com</small>
+</footer>
+<script src="../javascript/validateRegister.js"></script>
+</body>
+</html>

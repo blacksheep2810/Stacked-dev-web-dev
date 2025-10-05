@@ -1,0 +1,20 @@
+/* ===== ROUTES CAROUSEL STYLES ===== */
+.routes-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.route-nav-btn {
+    background: #03045E;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-size: 1rem;
+    font-weight: bold;
+}

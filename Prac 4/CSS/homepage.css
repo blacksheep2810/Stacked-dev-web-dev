@@ -1,0 +1,8 @@
+.himage {
+  display: flex;
+  justify-content: space-evenly; 
+  margin-bottom: 30px;           
+  flex-wrap: wrap; 
+               
+}
+/*used to have consistent and centered spacing between the images on the home page*/

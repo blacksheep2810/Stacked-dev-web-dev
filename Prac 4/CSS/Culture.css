@@ -1,0 +1,135 @@
+.activitieslabel li {
+  background-color: white;
+  padding: 20px;      
+  font-weight: bold;
+  text-align: center;
+  
+    
+}
+/*consistent format for all the ordered list items*/
+
+@media (max-width: 768px) {
+  .split-section {
+    flex-direction: column;      /* stack vertically on tablets/phones */
+    text-align: center;
+  }
+
+  .split-text {
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+#culturalact{
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    
+}
+/*used for the title of the page */
+
+
+/*sizing the photos*/
+.CulturePhotos {
+  width: 100%;       
+  height: auto;      
+  object-fit: cover;
+  
+}
+
+
+
+/*the actual slideshow container*/
+.cimages-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+               
+}
+
+
+
+/*this will hide all the slides by default when page is loaded*/
+.SlidesCult, .SlidesFam, .SlidesMuse, .SlideGame, .SlidesFood {
+  display: none;          
+  width: 100%;
+}
+
+.active-slide {
+  background-color: lightblue;
+}
+/*makes a slide visible*/
+
+/*back and forth buttons*/
+.back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 1.0s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.forward {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/*forward button on the right*/
+
+.back:hover, .forward:hover{
+  background-color: lightblue;
+}
+/*highlights the next and back arrows when the user's mouse is on the arrow
+
+
+
+/*south african colours border. no longer in use*/
+
+.imagelabels{
+  text-align:center;
+  color: #f2f2f2;
+  font-weight: bold;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* heavily references https://www.w3schools.com/howto/howto_js_slideshow.asp*/
+
+
+th
+{
+    background-color: bisque;
+}
+
+td
+{
+
+    background-color: white;
+}
+td, th
+{
+
+
+    margin: 100px;
+    padding: 20px;
+
+    width: 800px;
+    height: 80px;
+
+}
+
+/*formatting for the table at the bottom*/
+
+

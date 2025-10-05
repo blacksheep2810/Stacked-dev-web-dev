@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../CSS/Culture.css">
+    <link rel="stylesheet" href="../CSS/Jeff.css">
+    <script src="../Javascript/Culture.js" defer></script>
+    <meta charset="utf-8">
+    <title>Visit Jeffrey's Bay</title>
+</head> 
+<body>
+
+<div id="NavBarBlock">
+    <header>
+        <b>Visit Jeffrey's Bay, <i>where love and peace meets the sun and sea</i></b>
+    </header>
+    <nav id="NavBar">
+        <a href="Home.html">Home</a>
+        <a href="Culture.html">Culture</a>
+        <a href="History.html">History</a>
+        <a href="Landscape.html">Landscape</a>
+        <a href="Suggestions.html">Share your experience</a>
+        <a href="About us.html">About us</a>
+        <a href="SignIn.html">Sign In</a>
+    </nav>
+</div>
+
+<h1 id="culturalact">Cultural Activities To Do</h1>
+
+<ol class="activitieslabel">
+
+    <li><h1>Fun In The Sun</h1></li>
+    <div id="cultureslides" class="cimages-container">
+        <div class="SlidesC active-slide">
+            <img class="CulturePhotos" src="../images/surfingjbay.jpg" alt="surfing">
+            <div class="imagelabels">Jeffrey's Bay Surfing culture</div>
+        </div>
+        <div class="SlidesC">
+            <img class="CulturePhotos" src="../images/kayak.jpg" alt="kayak">
+            <div class="imagelabels">Kayak into the sunset</div>
+        </div>
+        <div class="SlidesC">
+            <img class="CulturePhotos" src="../images/sandboarding.jpg" alt="sandboarding">
+            <div class="imagelabels">No Snow? Sandboard</div>
+        </div>
+        <a class="back" onclick="plusSlides(-1, 0)">&#10094;</a> <!--buttons for each of the slides to be used when scrolling through. -->
+        <a class="forward" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+    <br>
+
+    <li><h1>Family Activities</h1></li>
+    <div id="familyslide" class="cimages-container">
+        <div class="SlidesF active-slide">
+            <img class="CulturePhotos" src="../images/slidefam.jpg" alt="sandslide">
+            <div class="imagelabels">Slide on the sand with the family</div>
+        </div>
+        <div class="SlidesF">
+            <img class="CulturePhotos" src="../images/ziplinefam.jpg" alt="zipline">
+            <div class="imagelabels">Zip down the beautiful forests</div>
+        </div>
+        <div class="SlidesF">
+            <img class="CulturePhotos" src="../images/quadfam.jpg" alt="quadbiking">
+            <div class="imagelabels">Quad race against your family</div>
+        </div>
+        <a class="back" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="forward" onclick="plusSlides(1, 1)">&#10095;</a>
+    </div>
+    <br>
+
+    <li><h1>Music Festivals</h1></li>
+    <div id="musicslides" class="cimages-container">
+        <div class="SlidesM active-slide">
+            <img class="CulturePhotos" src="../images/garland-jeffriesconcer.jpg" alt="concert">
+            <div class="imagelabels">Enjoy amazing concerts</div>
+        </div>
+        <div class="SlidesM">
+            <img class="CulturePhotos" src="../images/bikefestconcert.jpg" alt="bikefest">
+            <div class="imagelabels">BikeFest Concert</div>
+        </div>
+        <div class="SlidesM">
+            <img class="CulturePhotos" src="../images/beachconert.jpg" alt="beachconcert">
+            <div class="imagelabels">Beach music concerts</div>
+        </div>
+        <a class="back" onclick="plusSlides(-1, 2)">&#10094;</a>
+        <a class="forward" onclick="plusSlides(1, 2)">&#10095;</a>
+    </div>
+    <br>
+
+    <li><h1>Game Drives</h1></li>
+    <div id="gamedriveslide" class="cimages-container">
+        <div class="SlidesG active-slide">
+            <img class="CulturePhotos" src="../images/eveninggamed.jpg" alt="evening game drive">
+            <div class="imagelabels">Enjoy the beautiful Jeffrey's Bay Safari and meet</div>
+        </div>
+        <div class="SlidesG">
+            <img class="CulturePhotos" src="../images/leopard.jpg" alt="leopard">
+            <div class="imagelabels">Leopard Cubs</div>
+        </div>
+        <div class="SlidesG">
+            <img class="CulturePhotos" src="../images/zebra.jpg" alt="zebra">
+            <div class="imagelabels">Zebras</div>
+        </div>
+        <a class="back" onclick="plusSlides(-1, 3)">&#10094;</a>
+        <a class="forward" onclick="plusSlides(1, 3)">&#10095;</a>
+    </div>
+    <br>
+
+    <li><h1>For the Foodies</h1></li>
+    <div id="foodslides" class="cimages-container">
+        <div class="SlidesD active-slide">
+            <img class="CulturePhotos" src="../images/beachfood.jpg" alt="beachmeal">
+            <div class="imagelabels">Have Lunch by the beach</div>
+        </div>
+        <div class="SlidesD">
+            <img class="CulturePhotos" src="../images/bigfood.jpg" alt="bigmeal">
+            <div class="imagelabels">Enjoy MASSIVE meals</div>
+        </div>
+        <div class="SlidesD">
+            <img class="CulturePhotos" src="../images/sunseteat.jpg" alt="sunset">
+            <div class="imagelabels">Beautiful sunset dinners</div>
+        </div>
+        <a class="back" onclick="plusSlides(-1, 4)">&#10094;</a>
+        <a class="forward" onclick="plusSlides(1, 4)">&#10095;</a>
+    </div>
+    <br>
+
+</ol>
+
+
+
+	
+<!--heavily referenced: https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+
+	
+	<h1> Some of the most highly rated activites to do in Jefferys Bay! </h1>
+
+	<table>
+		<tr>
+			<th><h1>Activity</h1></th>
+			<th><h1>Where to find them</h1></th>
+		</tr>
+		<tr>
+			<td><h2>Sand Boarding</h2></td>
+			<td><h2><a href="https://www.sandboarding.infojeffreysbay.com/" target="_blank">Sandboarding Jefferys Bay</a></h2></td>
+		</tr>
+		<tr>
+			<td><h2>Ziplining</h2></td>
+			<td><h2><a href="https://www.allafricaadventures.com/jeffreys-bay/waterfall-kloofing-jeffreys-bay.html" target="_blank">Waterfall Zipline</a></h2></td>
+		</tr>
+
+		<tr>
+			<td><h2>Concert Tickets</h2></td>
+			<td><h2><a href="https://www.bandsintown.com/c/jeffreys-bay-south-africa" target="_blank">BandsInTown.com</a></h2></td>
+		</tr>
+
+		<tr>
+			<td><h2>Game Drives </td>
+			<td><h2><a href="https://www.jeffreysbaytourism.org/member/pabala-private-nature-reserve" target="_blank">Pabala Nature Reserve</a></h2></td>
+		</tr>
+
+		<tr>
+			<td><h2>Restuarant</h2></td>
+			<td><h2><a href="https://www.jbaybruco.co.za/" target="_blank">JBay Bruco</a></h2></td>
+		</tr>
+		
+	</table>
+	
+
+
+
+
+<div class="FootBarSpace"></div>
+<div id=FootBar>
+<footer id="footer">
+	<div class="social-icons">
+	<a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fjeffreysbayonline%2F" target="_blank" class="social-link">
+            <img src="../svg/facebook.svg" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/jeffreysbaytourism/?hl=en" target="_blank" class="social-link">
+            <img src="../svg/insta.svg" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://www.airbnb.com/jeffreys-bay-south-africa/stays" target="_blank" class="social-link">
+            <img src="../svg/airbnb.svg" alt="Airbnb" class="social-icon">
+        </a>
+	<a href="https://www.kouga.gov.za/"target="_blank">Municipality</a> 
+</div>
+	<small>thestackeddevelopers@gmail.com</small>
+</footer>
+
+</body>
+
+</html>
