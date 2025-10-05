@@ -438,3 +438,25 @@ header {
     font-size: 12px;
 }
 
+/* ===== Form Validation Styles ===== */
+input:invalid, textarea:invalid {
+  border: 2px solid #e74c3c; /* red border */
+}
+
+input:valid, textarea:valid {
+  border: 2px solid #2ecc71; /* green border */
+}
+
+.validation-msg {
+  font-size: 0.9rem;
+  color: #e74c3c;      /* red for error */
+  margin-top: 0.3rem;
+  display: none;       /* hidden by default */
+}
+
+.validation-msg.valid {
+  color: #2ecc71;      /* green for success */
+  display: block;
+}
+
+
