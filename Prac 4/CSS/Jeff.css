@@ -48,12 +48,18 @@ body, p, li, input, button {
   font-family: 'Lato', Arial, sans-serif;
 }
 
+a {
+  font-family: 'Lato', Arial, sans-serif;
+}
+
 /* Container class used in each page to avoid overlap between nav bars and contents */
 .Container {
   padding-top: 3vw;
   padding-bottom: 3vw;
   min-height: 100vh;
 }
+
+
 
 /* NavBar styles */
 #NavBar {
@@ -70,7 +76,7 @@ body, p, li, input, button {
   top: 0;
   left: 0;
   right: 0;
-  background-color: black;
+  background-color: #25262c;
   padding: 1rem 2rem;
   line-height: 1.5;
   color:white;
@@ -80,12 +86,11 @@ body, p, li, input, button {
 #NavBar a {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
 }
 
 #NavBar a:hover {
   color: white;
-  text-decoration: underline;
+  font-weight: bold;
   transform: scale(1.2);
 }
 
@@ -93,6 +98,24 @@ body, p, li, input, button {
   margin-left: auto;   /* pushes it to the right */
   margin-right: 50px;  /* adds space from the edge */
 }
+  /* === Logo in NavBar === */
+.nav-logo {
+  height: 45px;              /* adjust to desired size */
+  width: auto;               /* keeps aspect ratio */
+  display: block;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;        /* space between logo and first link */
+}
+
+#NavBar a.logo-link:hover {
+  transform: none;           /* prevent zoom on hover for logo */
+  text-decoration: none;
+}
+
 
 /* Split section: text left, media right */
 .split-section {
@@ -113,11 +136,13 @@ body, p, li, input, button {
 .split-text h1, 
 .split-text h2 {
   margin-bottom: 1rem;
+  margin-left: 3rem;
 }
 
 .split-text p {
   font-size: 1.1rem;
   line-height: 1.6;
+  margin-left: 3rem;
 }
 
 .split-media {
@@ -128,8 +153,8 @@ body, p, li, input, button {
 .split-media img,
 .split-media video {
   max-width: 100%;
-  border-radius: 10px;
-  height: auto;
+  border-radius: 5px;
+  height: 500px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
@@ -476,5 +501,70 @@ input:valid, textarea:valid {
   color: #2ecc71;      /* green for success */
   display: block;
 }
+
+/* Image Grid Section */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* space between images */
+  margin: 3rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.1); /* slight zoom effect */
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  bottom: -100%; /* start hidden */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(42, 48, 73, 0.9); /* navy overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+  transition: bottom 0.5s ease;
+}
+
+.grid-item:hover .overlay {
+  bottom: 0; /* slide up */
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .image-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
