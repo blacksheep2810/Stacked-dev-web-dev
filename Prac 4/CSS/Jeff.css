@@ -25,11 +25,6 @@ body {
   margin: 0;
 }
 
-header {
-  color: white;
-
-}
-
 /* Container class used in each page to avoid overlap between nav bars and contents */
 .Container {
   padding-top: 3vw;
@@ -52,13 +47,15 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: white;
+  background-color: black;
   padding: 1rem 2rem;
   line-height: 1.5;
+  color:white;
+  z-index:5
 }
 
 #NavBar a {
-  color: black;
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
@@ -222,6 +219,7 @@ header {
   padding: 1rem;
   left: 0;
   line-height: 1.5;
+  z-index:5
 }
 
 #footer small {
