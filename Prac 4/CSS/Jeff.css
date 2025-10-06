@@ -1,3 +1,10 @@
+:root {
+  --deep-blue: #0046FF;
+  --aqua: #73C8D2;
+  --cream: #F5F1DC;
+  --orange: #FF9013;
+}
+
 /* ====== League Spartan Font ====== */
 
 @font-face {
@@ -98,6 +105,32 @@ a {
   margin-left: auto;   /* pushes it to the right */
   margin-right: 50px;  /* adds space from the edge */
 }
+
+/* Transparent Navbar by default */
+#NavBarBlock {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #25262c;           /* initially transparent */
+  transition: background-color 0.3s ease;  /* smooth color transition */
+  z-index: 1000;
+}
+
+/* When scrolled
+#NavBarBlock.scrolled {
+  background-color: #25262c;     /* your solid color */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* subtle drop shadow */
+/* } */ 
+
+/* Nav links stay visible */
+#NavBar a {
+  color: white;  /* adjust to ensure readable on white bg */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
   /* === Logo in NavBar === */
 .nav-logo {
   height: 45px;              /* adjust to desired size */
@@ -169,6 +202,84 @@ a {
     margin-bottom: 1.5rem;
   }
 }
+
+/* ===== Vision / Mission / Values ===== */
+.about-section h1, .team-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2a3049;
+}
+
+.vmv-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.vmv-card {
+  flex: 1 1 250px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.vmv-card h2 {
+  margin-bottom: 0.8rem;
+  color: #1e2a45;
+}
+
+.vmv-card p {
+  color: #333;
+}
+
+/* ===== Team Image Grid ===== */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 320px;          /* adjust as needed */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.05);
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background: rgba(34, 54, 90, 0.85);
+  color: white;
+  text-align: center;
+  padding: 0.8rem;
+  font-size: 1rem;
+  transition: bottom 0.4s ease;
+}
+
+.grid-item:hover .overlay-text {
+  bottom: 0;
+}
+
 
 
 /* Panels */
@@ -552,6 +663,59 @@ input:valid, textarea:valid {
 .grid-item:hover .overlay {
   bottom: 0; /* slide up */
 }
+
+/* ===== About Us Hero Banner ===== */
+.about-hero {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* adjust height as desired */
+  overflow: hidden;
+}
+
+.about-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%); /* darkens image for better text contrast */
+}
+
+.about-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.about-hero-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.about-hero-overlay p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .about-hero-overlay h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-hero-overlay p {
+    font-size: 1rem;
+  }
+}
+
 
 /* Responsive */
 @media (max-width: 900px) {
