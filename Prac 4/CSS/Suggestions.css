@@ -1,0 +1,107 @@
+/* Hero for Suggestions Page */
+.hero-suggestions {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* shorter than full screen */
+  overflow: hidden;
+}
+
+.hero-suggestions .hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crops nicely to fit container */
+}
+
+.hero-suggestions .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay for readability */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-suggestions .hero-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-suggestions .hero-overlay p {
+  font-size: 1.2rem;
+}
+
+/* Add spacing for the heading below the hero */
+.suggestions-heading {
+  margin-top: 4rem; /* pushes it down from the hero */
+  text-align: center;
+  color: #001d4f;
+}
+
+
+/* Suggestion form */
+.suggestion-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 2rem auto;
+  gap: 1rem;
+}
+
+.suggestion-form label {
+  font-weight: bold;
+}
+
+.suggestion-form textarea {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-size: 1rem;
+}
+
+.suggestion-form button {
+  align-self: flex-start;
+  background-color: #2a3049;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.suggestion-form button:hover {
+  background-color: #2a3049;
+}
+
+/* Past suggestions */
+.past-suggestions {
+  max-width: 600px;
+  margin: 3rem auto;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.past-suggestions h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.past-suggestions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.past-suggestions li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}

@@ -1,8 +1,9 @@
 :root {
-  --deep-blue: #0046FF;
+  --navy-blue: #001d4f;
   --aqua: #73C8D2;
   --cream: #F5F1DC;
-  --orange: #FF9013;
+  --butter: #ebd974;
+  --seashell-pink: #f4d1b6;
   --shark: #25262c;
 }
 
@@ -133,7 +134,7 @@ a {
   left: 0;
   width: 100%;
   padding: 1rem 2rem;
-  background-color: #25262c;           /* initially transparent */
+  background-color: var(--navy-blue);           /* initially transparent */
   transition: background-color 0.3s ease;  /* smooth color transition */
   z-index: 1000;
 }
@@ -223,6 +224,8 @@ a {
   }
 }
 
+
+
 /* Form styles */
 .suggestion-form {
   max-width: 600px;
@@ -252,7 +255,7 @@ a {
 }
 
 .suggestion-form button {
-  background-color: #0046FF; /* navy */
+  background-color: var(--navy-blue);
   color: white;
   padding: 0.6rem 1.5rem;
   border: none;
@@ -279,7 +282,7 @@ a {
 
 .suggestion-card {
   background: #F5F1DC; /* cream */
-  border-left: 5px solid #FF9013; /* orange accent */
+  border-left: 5px solid var(--butter); /* butter accent */
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 8px;
@@ -300,13 +303,13 @@ a {
 .username {
   font-size: 0.9rem;
   font-weight: bold;
-  color: #0046FF;
+  color: var(--navy-blue);
 }
 
 .thumbs-up {
   background: none;
-  border: 1px solid #0046FF;
-  color: #0046FF;
+  border: 1px solid var(--navy-blue);
+  color: var(--navy-blue);
   padding: 0.3rem 0.7rem;
   border-radius: 15px;
   cursor: pointer;
@@ -314,7 +317,7 @@ a {
 }
 
 .thumbs-up:hover {
-  background: #0046FF;
+  background: var(--navy-blue);
   color: white;
 }
 
@@ -461,52 +464,6 @@ a {
 .hero-overlay p {
   font-size: 1.5rem;
 }
-
-/* Hero for Suggestions Page */
-.hero-suggestions {
-  position: relative;
-  width: 100%;
-  height: 60vh; /* shorter than full screen */
-  overflow: hidden;
-}
-
-.hero-suggestions .hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* crops nicely to fit container */
-}
-
-.hero-suggestions .hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* dark overlay for readability */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-}
-
-.hero-suggestions .hero-overlay h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero-suggestions .hero-overlay p {
-  font-size: 1.2rem;
-}
-
-/* Add spacing for the heading below the hero */
-.suggestions-heading {
-  margin-top: 4rem; /* pushes it down from the hero */
-  text-align: center;
-  color: #0046FF;
-}
-
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
@@ -667,67 +624,6 @@ a {
   line-height: 1.6;
 }
 
-/* Suggestion form */
-.suggestion-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  margin: 2rem auto;
-  gap: 1rem;
-}
-
-.suggestion-form label {
-  font-weight: bold;
-}
-
-.suggestion-form textarea {
-  padding: 1rem;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  resize: vertical;
-  font-size: 1rem;
-}
-
-.suggestion-form button {
-  align-self: flex-start;
-  background-color: #2a3049;
-  color: white;
-  padding: 0.7rem 1.5rem;
-  border: none;
-  border-radius: 25px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.suggestion-form button:hover {
-  background-color: #2a3049;
-}
-
-/* Past suggestions */
-.past-suggestions {
-  max-width: 600px;
-  margin: 3rem auto;
-  background: #f9f9f9;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.past-suggestions h2 {
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.past-suggestions ul {
-  list-style: none;
-  padding: 0;
-}
-
-.past-suggestions li {
-  margin: 0.5rem 0;
-  font-size: 1.1rem;
-}
 /*Stylings for a message box in the bottom right corner*/
 #messageBox {
     display: none;
@@ -878,6 +774,42 @@ input:valid, textarea:valid {
     font-size: 1rem;
   }
 }
+
+/* Offline Banner Styles - Navy Theme */
+#offlineBanner {
+  position: fixed;
+  top: -60px;                    /* hidden by default */
+  left: 0;
+  width: 100%;
+  background-color: #001F54;     /* deep navy from your palette */
+  color: #FFFFFF;                /* white text */
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 31, 84, 0.95); /* slightly transparent */
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  z-index: 2000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: top 0.4s ease-in-out, background-color 0.3s ease;
+}
+
+#offlineBanner.show {
+  top: 0;                         /* slides down */
+}
+
+.cloud-icon {
+  font-size: 1.3rem;
+}
+
+.offline-text {
+  font-family: 'Lato', Arial, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+
 
 
 /* Responsive */
