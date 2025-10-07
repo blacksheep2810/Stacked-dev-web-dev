@@ -61,9 +61,9 @@ a {
 
 /* Container class used in each page to avoid overlap between nav bars and contents */
 .Container {
-  padding-top: 3vw;
-  padding-bottom: 3vw;
-  min-height: 100vh;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  min-height: 80vh;
 }
 
 
@@ -364,6 +364,7 @@ a {
   text-align: center;
   color: white;
   width: 100%;
+  position: 0;
 }
 
 #footer small {

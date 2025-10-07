@@ -13,11 +13,15 @@ body {
 }
 
 /* main */
+
 .Container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 2rem;
+    padding-top: 4vw;
+    padding-bottom: 2vw;
 }
+
 
 /*headings*/
 h1, h2, h3 {
