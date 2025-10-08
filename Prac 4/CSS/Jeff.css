@@ -127,7 +127,7 @@ a {
   border-radius: 20px;
 }
 
-/* Transparent Navbar by default */
+/* Transparent Navbar by default
 #NavBarBlock {
   position: fixed;
   top: 0;
@@ -135,9 +135,9 @@ a {
   width: 100%;
   padding: 1rem 2rem;
   background-color: var(--navy-blue);           /* initially transparent */
-  transition: background-color 0.3s ease;  /* smooth color transition */
-  z-index: 1000;
-}
+  /* transition: background-color 0.3s ease;  /* smooth color transition */
+  /* z-index: 1000;
+} */ 
 
 /* When scrolled
 #NavBarBlock.scrolled {
@@ -790,7 +790,7 @@ input:valid, textarea:valid {
   top: -60px;                    /* hidden by default */
   left: 0;
   width: 100%;
-  background-color: #001F54;     /* deep navy from your palette */
+  background-color: #001F54;     
   color: #FFFFFF;                /* white text */
   text-align: center;
   padding: 1rem;
