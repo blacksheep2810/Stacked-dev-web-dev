@@ -99,7 +99,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--shark);
+  background-color: var(--navy-blue);
   padding: 1rem 2rem;
   line-height: 1.5;
   color:white;
@@ -134,10 +134,10 @@ a {
   left: 0;
   width: 100%;
   padding: 1rem 2rem;
-  background-color: var(--navy-blue);           /* initially transparent */
+  background-color: var(--navy-blue);           initially transparent
   /* transition: background-color 0.3s ease;  /* smooth color transition */
   /* z-index: 1000;
-} */ 
+} 
 
 /* When scrolled
 #NavBarBlock.scrolled {
