@@ -1,0 +1,83 @@
+/* =======================
+   Admin Dashboard Styles
+   ======================= */
+
+.admin-container {
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 2rem;
+}
+
+.admin-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.admin-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.admin-card {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0046FF;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.admin-table th,
+.admin-table td {
+  border: 1px solid #ddd;
+  padding: 0.7rem;
+  text-align: left;
+}
+
+.admin-table th {
+  background: #73C8D2;
+  color: #fff;
+}
+
+.btn-refresh {
+  margin-top: 1rem;
+  background: #FF9013;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-refresh:hover {
+  background: #e67e00;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .admin-header h1 {
+    font-size: 2rem;
+  }
+
+  .admin-card h2 {
+    font-size: 1.2rem;
+  }
+}
