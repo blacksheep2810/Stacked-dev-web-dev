@@ -105,3 +105,76 @@
   margin: 0.5rem 0;
   font-size: 1.1rem;
 }
+
+/* Split Section Layout */
+.split-section {
+  display: flex;
+  min-height: 90vh;
+}
+
+/* Left Panel: Content */
+.left-panel {
+  flex: 1;
+  padding: 3rem;
+  background: #f9f9f9;
+  overflow-y: auto;
+}
+
+.suggestions-heading {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+/* Right Panel: Image */
+.right-panel {
+  flex: 1;
+  background: #000; /* fallback behind image */
+}
+
+.split-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Form & Feed Styling (keep existing styles if you already have them) */
+.suggestion-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  resize: none;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.suggestions-feed {
+  margin-top: 2rem;
+}
+
+.suggestion-card {
+  background: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Make it mobile-friendly */
+@media screen and (max-width: 768px) {
+  .split-section {
+    flex-direction: column;
+  }
+  .right-panel {
+    height: 250px;
+  }
+}
